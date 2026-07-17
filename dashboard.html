@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CCDMS Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+body{
+    background:#f4f4f4;
+}
+.header{
+    background:#006341;
+    color:white;
+    padding:15px;
+    text-align:center;
+}
+.cards{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:15px;
+    padding:20px;
+}
+.card{
+    background:white;
+    border-radius:10px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 3px 10px rgba(0,0,0,.2);
+}
+.card h2{
+    color:#006341;
+}
+.card p{
+    color:#666;
+}
+.card a{
+    display:inline-block;
+    margin-top:10px;
+    text-decoration:none;
+    background:#006341;
+    color:white;
+    padding:10px 20px;
+    border-radius:6px;
+}
+.logout{
+    text-align:center;
+    margin:20px;
+}
+.logout button{
+    background:#b71c1c;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+<h2>The Nativity Church of the Blessed Virgin Mary</h2>
+<p>Archdiocese of Tabora</p>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h2>Register Member</h2>
+<p>Add a new church member.</p>
+<a href="register-member.html">Open</a>
+</div>
+
+<div class="card">
+<h2>Members List</h2>
+<p>View all registered members.</p>
+<a href="members.html">Open</a>
+</div>
+
+<div class="card">
+<h2>Total Members</h2>
+<p id="totalMembers">0</p>
+</div>
+
+</div>
+
+<div class="logout">
+<button onclick="logout()">Logout</button>
+</div>
+
+<script>
+function logout(){
+    window.location.href="index.html";
+}
+</script>
+
+</body>
+</html>
