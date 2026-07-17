@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CCDMS Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="login-container">
+    <div class="login-card">
+
+      <img src="church-logo.png" alt="Church Logo" class="logo">
+
+      <h1>The Nativity Church</h1>
+      <h2>of the Blessed Virgin Mary</h2>
+      <p class="subtitle">Archdiocese of Tabora</p>
+
+      <form id="loginForm">
+        <div class="input-group">
+          <label>Email</label>
+          <input type="email" id="email" placeholder="Enter email" required>
+        </div>
+
+        <div class="input-group">
+          <label>Password</label>
+          <input type="password" id="password" placeholder="Enter password" required>
+        </div>
+
+        <button type="submit" class="login-btn">LOGIN</button>
+      </form>
+
+      <p id="message" class="message"></p>
+
+      <div class="footer">
+        Catholic Church Data Management System v1.0
+      </div>
+
+    </div>
+  </div>
+
+  <script src="firebase-config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
