@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register Member</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+.container{
+    max-width:600px;
+    margin:20px auto;
+    background:#fff;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,.2);
+}
+h2{
+    text-align:center;
+    color:#006341;
+}
+select,input{
+    width:100%;
+    padding:12px;
+    margin:8px 0;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+button{
+    width:100%;
+    padding:12px;
+    background:#006341;
+    color:#fff;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Register Church Member</h2>
+
+<input type="text" id="fullName" placeholder="Full Name">
+
+<select id="gender">
+<option value="">Select Gender</option>
+<option>Male</option>
+<option>Female</option>
+</select>
+
+<input type="date" id="dob">
+
+<input type="text" id="phone" placeholder="Phone Number">
+
+<input type="email" id="email" placeholder="Email (Optional)">
+
+<input type="text" id="region" placeholder="Region">
+
+<input type="text" id="district" placeholder="District">
+
+<input type="text" id="parish" placeholder="Parish">
+
+<input type="file" id="photo">
+
+<button id="saveBtn">Save Member</button>
+
+</div>
+
+<script type="module" src="firebase-config.js"></script>
+<script type="module" src="members.js"></script>
+
+</body>
+</html>
